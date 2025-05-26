@@ -3,32 +3,64 @@
 <head>
     <meta charset="UTF-8" />
     <title>TOP - Sign up Form</title>
+    <link rel="stylesheet" href="index.css" />
 </head>
 <body>
     <div id="container">
         <div class="left-side">
-            <div class="logo"></div>
-            <p>Credit here</p>
+            <div class="logo">
+                <img src="odin-lined.png" alt="The Odin Project Logo" />
+                <p class="logo-text">New York City</p>
+            </div>
+            <p class="image-credit">Image by <a href="https://unsplash.com/@shawnxxf">Shawn Xu</a> from <a href="https://unsplash.com/photos/cars-on-road-K9set5TFE5U">Unsplash</a></p>
         </div>
         <div class="right-side">
-            <div class="information">This is a placeholder information section</div>
+            <div class="information">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started</p>
+                <p>You <em>know</em> you want to.</p>
+            </div>
             <div class="sign-up-form">
                 <form action="#" method="post">
-                    <p>Let's do this!</p>
-                    <label for="first-name">First name</label>
-                    <input type="text" id="first-name" name="first-name"/>
-                    <label for="last-name">Last name</label>
-                    <input type="text" id="last-name" name="last-name"/>
-                    <label for="email">Email</label>
-                    <input type="text" id="email" name="email"/>
-                    <label for="phone-number">Phone number</label>
-                    <input type="text" id="phone-number" name="phone-number"/>
-                    <label for="password">Password</label>
-                    <input type="text" id="password" name="password"/>
-                    <label for="confirm-password">Confirm password</label>
-                    <input type="text" id="confirm-password" name="confirm-password"/>
-                    <button type="submit">Create account</button>
-                    <p>Already have an account? <a href="#">Log in</a></p>
+                    <div class="form-input-container">
+                        <h3>Let's do this!</h3>
+                        <div class="form-row">
+                            <div class="form-column">
+                                <label for="first-name">First name</label>
+                                <input type="text" id="first-name" name="first-name"/>
+                            </div>
+                            <div class="form-column">
+                                <label for="last-name">Last name</label>
+                                <input type="text" id="last-name" name="last-name"/>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-column">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email"/>
+                            </div>
+                            <div class="form-column">
+                                <label for="phone-number">Phone number</label>
+                                <input type="tel" id="phone-number" name="phone-number"/>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-column">
+                                <label for="password">Password</label>
+                                <input type="password" id="password" name="password" required/>
+                            </div>
+                            <div class="form-column">
+                                <label for="confirm-password">Confirm password</label>
+                                <input type="password" id="confirm-password" name="confirm-password" required/>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-account-section">
+                        <button type="submit">Create account</button>
+                        <p>Already have an account? <a href="#">Log in</a></p>
+                    </div>
                 </form>
             </div>
         </div>
